@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <record id='hms_patient_action' model="ir.actions.act_window" >
+            <field name="name" >patients</field>
+            <field name="res_model" >hms.patient</field>
+            <field name="view_mode" >tree,form</field>
+
+
+        </record>
+
+             <!-- modify form  -->
+             <record id="tm_doctor_modify_form" model="ir.ui.view">
+                <field name="name"  >Insert doctor</field>
+                <field name="model">hms.patient</field>
+                <field name="arch" type="xml">
+                    <form>
+                       
+                        <sheet>
+                              
+                                <group>
+                                    <field name="first_name" />
+                                    <field name="last_name" />
+                                </group>
+                                <group>
+                                    <field name="email" />
+                                    <field name="avatar" />
+                                    
+                                </group>
+                                
+                                <group >
+                                    <field name="birthdate"  />
+                                    <field name="description" />
+                                </group>
+                
+                                <group>
+                                    <field name="age" />
+                                    <field name="gender"  />
+                                </group>
+                                <group>
+                                    <field name="phone_number" />
+                                    <field name="state" />
+                                </group>
+                            
+                                
+                                <group>
+                                    <field name="locate" />
+                                </group>
+                        </sheet>
+                    </form>
+    
+                </field>
+            </record>
+
+                <!-- modify tree  -->
+    
+        <record id="tm_tourism_view_" model="ir.ui.view" >
+          
+            <field name="name">patients</field>
+            <field name="model">hms.patient</field>
+            <field name="arch" type="xml">
+                
+                    <tree class="text-center">
+                            <field class="shadow rounded-circle" options="{'size': [50,50]}" name="avatar" widget='image' />
+                            <field class="alert alert-success" name="first_name" />
+                            <field class="alert alert-info" name="email" />
+                            <field class="alert alert-warning" name="age" />
+                            <field class="alert alert-danger" name="phone_number" />
+                            <field class="alert alert-secondary" name="locate" />      
+                    </tree>
+
+                 
+            </field>
+      
+        </record>
+        
+        <menuitem id='hms_patients_sub_menu' parent="hms_sub_management_menu"  name='patients' action='hms_patient_action' />
+
+    </data>
+
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id='hms_nurse_action' model="ir.actions.act_window" >
+            <field name="name" >nurses</field>
+            <field name="res_model" >hms.nurse</field>
+            <field name="view_mode" >tree,form</field>
+        </record>
+                <!-- modify tree  -->
+    
+        <record id="hms_nurse_view_" model="ir.ui.view" >
+          
+            <field name="name">nurses</field>
+            <field name="model">hms.nurse</field>
+            <field name="arch" type="xml">
+                
+                    <tree class="text-center">
+                            <field class="shadow rounded-circle" options="{'size': [50,50]}" name="avatar" widget='image' />
+                            <field class="alert alert-success" name="first_name" />
+                            <field class="alert alert-info" name="email" />
+                            <field class="alert alert-warning" name="age" />
+                            <field class="alert alert-danger" name="phone_number" />
+                            <field class="alert alert-secondary" name="shift" />      
+                    </tree>
+
+                 
+            </field>
+      
+        </record>
+        <menuitem id='hms_nurses_sub_menu' sequence="20" parent="hms_sub_management_menu"  name='nurses' action='hms_nurse_action' />
+    </data>
+</odoo>

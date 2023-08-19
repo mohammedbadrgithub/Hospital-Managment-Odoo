@@ -1,0 +1,59 @@
+<odoo>
+    <data>
+
+        <record id="iti_school_category" model="ir.module.category">
+            <field name="name">HMS Hospital Management</field>
+        </record>       
+            <!-- <record id="hms_hospital_manager" model="res.groups">
+                <field name="name" >manager</field>
+                <field name="category_id" ref="iti_school_category" />
+                <field name="implied_ids" eval="[(4,ref('hms_hospital_doctor') )]" />
+               
+            </record> -->
+            <record id="hms_hospital_doctor" model="res.groups">
+                <field name="name" >doctors</field>
+                <field name="category_id" ref="iti_school_category" />
+                <!-- <field name="implied_ids" eval="[(4,ref('hms_hospital_nurse') )]" /> -->
+                
+            </record>
+
+            <!-- <record id="hms_hospital_patient" model="res.groups">
+                <field name="name" >patient</field>
+                <field name="category_id" ref="iti_school_category" />
+                
+               </record>  
+                -->
+           
+            <!-- <record id="hms_hospital_nurse" model="res.groups">
+                <field name="name" >nurse</field>
+                <field name="category_id" ref="iti_school_category" />
+                <field name="implied_ids" eval="[(4,ref('hms_hospital_patient') )]" />
+                
+            </record>
+
+           <record id="hms_nurse_own_records" model="ir.rule" >
+                <field name="name">show only my patients</field>
+                <field name="model_id" ref="model_hms_patient"></field>
+                <field name="groups" eval="[(4,ref('hms_hospital_nurse') )]" />
+                <field name="domain_force">[('create_uid','=',user.id)]</field> 
+            </record>
+            <record id="hms_doctors_own_records" model="ir.rule" >
+                <field name="name">show only my patients</field>
+                <field name="model_id" ref="model_hms_patient"></field>
+                <field name="groups" eval="[(4,ref('hms_hospital_doctor') )]" />
+                <field name="domain_force">[('create_uid','=',user.id)]</field> 
+            </record>
+
+            <record id="iti_manager_all_records" model="ir.rule" >
+                <field name="name">show all my users</field>
+                <field name="model_id" ref="model_hms_patient"></field>
+                <field name="groups" eval="[(4,ref('hms_hospital_manager'))]" />
+                <field name="domain_force">[(1,'=',1)]</field>
+            </record> 
+     -->
+
+
+   
+
+    </data>
+</odoo>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_report_hms_doctor" model="ir.actions.report">
+            <field name="name">PDF</field>
+            <field name="model">hms.doctor</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">Hospital_Management_System.hms_doctor_document</field>
+            <field name="report_file">Hospital_Management_System.hms_doctor_document</field> 
+            <field name="report_file">Hospital_Management_System.hms_doctor_document</field> 
+             <field name="print_report_name">’hms doctor - %s' % (object.first_name))</field>
+            <field name="binding_model_id" ref="model_hms_doctor"/>
+            <field name="binding_type">report</field>
+        </record>
+
+    <template id="Hospital_Management_System.hms_doctor_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.basic_layout">
+
+                    <div class="header" title="header">
+                        <div class="row">
+                            <div class="col-2"
+                                 style="padding: 0.1cm;">
+                                <div style="text-align:center;">
+                                    <img src="o.avatar" align="center" width="100" height="100"
+                                         style="margin:0;" alt="Class Logo"/>
+                                </div>
+                            </div>
+                            <div class="col-6"
+                                 style=" padding: 0.1cm;">
+                                <p align="center" style="margin-top: 0.5cm; font-size:22pt;">
+                                    <font face="KacstOne">
+                                        <span class="text-center" lang="hi-IN">
+                                             بيانات الفصل
+                                        </span>
+                                        <span class="text-right" lang="hi-IN">
+                                           
+                                        </span>
+                                        <span class="text-right" lang="hi-IN">
+                                          
+                                        </span>
+                                    </font>
+                                </p>
+                                <p align="right" style="margin-top: 0.5cm; font-size:22pt;">
+                                    <font face="KacstOne">
+                                        <span class="text-right" lang="hi-IN">
+
+                                        </span>
+                                        <span class="text-right" lang="hi-IN">
+
+                                        </span>
+                                        <span class="text-right" lang="hi-IN">
+
+                                        </span>
+                                    </font>
+                                </p>
+
+                            </div>
+                            <div class="col-4"
+                                 style=" padding: 0.1cm;  font-size:22pt;">
+                                <p align="right">
+                                    <font face="KacstOne">
+                                        <span class="text-right" lang="hi-IN">
+                                            وزاره التربيه والتعليم
+                                        </span>
+                                    </font>
+                                    <br/>
+                                    <font face="KacstOne">
+                                        <span class="text-center" lang="hi-IN">
+                                            اداره القاهره التعليميه
+                                        </span>
+                                    </font>
+                                    <br/>
+                                    <font face="KacstOne">
+                                        <span class="text-center" lang="hi-IN">
+                                            مدرسه الاورمان الثانويه
+                                        </span>
+                                    </font>
+
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <body lang="en-GB" dir="rtl">
+                        <table width="100%" cellpadding="4" class="table table-condensed"
+                               style="border:2px solid black;"
+                               cellspacing="0" dir="rtl">
+                            <thead style="color:#000; background-color:#CCC; font-size:20px;">
+                                <tr>
+                                    <th class="text-center" style="border:2px solid black;">الاسم</th>
+                                    <th class="text-center" style="border:2px solid black;">الطلبه</th>
+                                    <th class="text-center" style="border:2px solid black;">المدرسون</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <!--                            <t t-foreach="data_lines" t-as="line">-->
+                                <tr valign="top">
+                                    <td class="text-center m-auto"
+                                        style="border: 2px solid black !important; padding: 0.1cm;">
+                                        <p class="text-center m-auto" style="font-weight:600; font-size:15pt;"
+                                           align="center">
+                                            <t t-esc="o.first_name"/>
+                                        </p>
+                                    </td>
+                                    <td class="text-center m-auto"
+                                        style="border: 2px solid black !important; padding: 0.1cm;">
+                                        <p class="text-center m-auto" style="font-weight:600; font-size:15pt;"
+                                           align="center">
+                                            <t t-foreach="o.last_name" t-as="line">
+                                                <t t-esc="line.name"/>
+                                            </t>
+                                        </p>
+                                    </td>
+
+                                 
+
+                                </tr>
+                             
+                            </tbody>
+                        </table>
+                    </body>
+                    <div class="footer">
+                        <div class="row mt-2">
+                            <p style="text-align:center; font-size:15pt; font-weight:600;" class="col-4">يعتمد</p>
+                            <p style="text-align:center; font-size:15pt; font-weight:600;" class="col-4">توقيع المختص</p>
+                            <p style="text-align:center; font-size:15pt; font-weight:600;" class="col-4">المراجعة</p>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+     
+    </data>
+
+</odoo>

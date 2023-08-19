@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    
+    <data>
+
+        <record id='hms_doctor_action' model="ir.actions.act_window" >
+            <field name="name" >doctors</field>
+            <field name="res_model" >hms.doctor</field>
+            <field name="view_mode" >tree,form</field>
+        </record>
+        <!-- main menu -->
+        <menuitem id= 'htm_hospital_root_menu' name="Hospital">
+        </menuitem>
+         <!-- manage menu -->
+        <menuitem id="hms_sub_management_menu" name="Management" parent="htm_hospital_root_menu" />
+          <!-- sub menu -->
+        <menuitem id='hms_doctors_sub_menu' sequence="10" parent="hms_sub_management_menu"  name='doctors' action='hms_doctor_action' />
+
+        <!-- modify form  -->
+        <record id="tm_doctor_modify_form" model="ir.ui.view">
+            <field name="name"  >Insert doctor</field>
+            <field name="model">hms.doctor</field>
+            <field name="arch" type="xml">
+                <form>
+                   
+                    <sheet>
+                          
+                            <group>
+                                <field name="first_name" />
+                                <field name="last_name" />
+                            </group>
+                            <group>
+                                <field name="email" />
+                                <field name="avatar" />
+                                
+                            </group>
+                            
+                            <group >
+                                <field name="birthdate"  />
+                                <field name="description" />
+                            </group>
+            
+                            <group>
+                                <field name="age" />
+                                <field name="gender"  />
+                            </group>
+                            <group>
+                                <field name="phone_number" />
+                                <field name="specilize" />
+                            </group>
+                        
+                            
+                            <group>
+                                <field name="words_ids" widget="many2many_tags" />
+                            </group>
+                    </sheet>
+                </form>
+
+            </field>
+        </record>
+
+
+        <!-- modify tree  -->
+    
+        <record id="hms_doctor_view_" model="ir.ui.view" >
+            <field name="name">doctors</field>
+            <field name="model">hms.doctor</field>
+            <field name="arch" type="xml">
+                <tree class="text-center">
+                        <field class="shadow rounded-circle" options="{'size': [50,50]}" name="avatar" widget='image' />
+                        <field class="alert alert-success" name="first_name" />
+                        <field class="alert alert-info" name="email" />
+                        <field class="alert alert-warning" name="age" />
+                        <field class="alert alert-danger" name="phone_number" />
+                        <field class="alert alert-secondary" name="specilize" />       
+                </tree>   
+            </field>
+        </record>
+    
+
+    </data>
+</odoo>

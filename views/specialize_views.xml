@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <record id='hms_specialize_action' model="ir.actions.act_window" >
+            <field name="name" >specialize</field>
+            <field name="res_model" >hms.specilize</field>
+            <field name="view_mode" >tree,form</field>
+        </record>
+        <record id="tm_specialize_modify_form" model="ir.ui.view">
+            
+            <field name="name"  >Insert Specialize</field>
+            <field name="model">hms.specilize</field>
+            <field name="arch" type="xml">
+                <form>
+                   
+                    <sheet>
+                        <!-- <p class="alert alert-danger">dddddd</p> -->
+                            <group>
+                                <field name="name" />
+                                <field name="doctors_ids" />
+                            </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <menuitem id='hms_specialize_sub_menu' parent="hms_sub_management_menu"  name='specialize' action='hms_specialize_action' />
+
+    </data>
+
+</odoo>

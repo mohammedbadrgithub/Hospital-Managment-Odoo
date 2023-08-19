@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <record id='hms_ward_action' model="ir.actions.act_window" >
+            <field name="name" >wards</field>
+            <field name="res_model" >hms.ward</field>
+            <field name="view_mode" >tree,form</field>
+        </record>
+
+        <record id="tm_ward_modify_form" model="ir.ui.view">
+            
+            <field name="name"  >Insert ward</field>
+            <field name="model">hms.ward</field>
+            <field name="arch" type="xml">
+                <form>
+                   
+                    <sheet>
+                        <!-- <p class="alert alert-danger">dddddd</p> -->
+                            <group>
+                                <field name="name" />
+                                <field name="resposible" />
+                                <field name="patients_ids" />
+                            </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <menuitem id='hms_ward_sub_menu' parent="hms_sub_management_menu"  name='wards' action='hms_ward_action' />
+
+    </data>
+
+</odoo>

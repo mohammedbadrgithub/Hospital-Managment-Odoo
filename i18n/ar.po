@@ -1,0 +1,441 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Hospital_Management_System
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-05 17:36+0000\n"
+"PO-Revision-Date: 2023-08-05 17:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Hospital_Management_System
+#: code:addons/Hospital_Management_System/controllers/main.py:0
+#, python-format
+msgid "%(car_name)s (driven from: %(date_start)s to %(date_end)s)"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model_terms:ir.ui.view,arch_db:Hospital_Management_System.hms_doctor_document
+msgid "نظام ادارة المستشفى"
+"<font face=\"KacstOne\">\n"
+"                                        <span class=\"text-center\" lang=\"hi-IN\">\n"
+"                                             بيانات الفصل\n"
+"                                        </span>\n"
+"                                        <span class=\"text-right\" lang=\"hi-IN\">\n"
+"                                           \n"
+"                                        </span>\n"
+"                                        <span class=\"text-right\" lang=\"hi-IN\">\n"
+"                                          \n"
+"                                        </span>\n"
+"                                    </font>"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model_terms:ir.ui.view,arch_db:Hospital_Management_System.hms_doctor_document
+msgid ""
+"<font face=\"KacstOne\">\n"
+"                                        <span class=\"text-right\" lang=\"hi-IN\">\n"
+"                                            وزاره التربيه والتعليم\n"
+"                                        </span>\n"
+"                                    </font>\n"
+"                                    <br/>\n"
+"                                    <font face=\"KacstOne\">\n"
+"                                        <span class=\"text-center\" lang=\"hi-IN\">\n"
+"                                            اداره القاهره التعليميه\n"
+"                                        </span>\n"
+"                                    </font>\n"
+"                                    <br/>\n"
+"                                    <font face=\"KacstOne\">\n"
+"                                        <span class=\"text-center\" lang=\"hi-IN\">\n"
+"                                            مدرسه الاورمان الثانويه\n"
+"                                        </span>\n"
+"                                    </font>"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__age
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__age
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__age
+msgid "Age"
+msgstr "العمر"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__avatar
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__avatar
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__avatar
+msgid "Avatar"
+msgstr "الصورة"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__birthdate
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__birthdate
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__birthdate
+msgid "Birthdate"
+msgstr "تاريخ الميلاد"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__charge
+msgid "Charge"
+msgstr "المسؤول"
+
+#. module: Hospital_Management_System
+#: model_terms:ir.ui.view,arch_db:Hospital_Management_System.hms_doctor_document
+msgid "Class Logo"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__create_uid
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__create_uid
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__create_uid
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_specilize__create_uid
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward__create_uid
+msgid "Created by"
+msgstr "انشأ بواسطة"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__create_date
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__create_date
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__create_date
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_specilize__create_date
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward__create_date
+msgid "Created on"
+msgstr "انشأ فى"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_nurse__shift__day
+msgid "Day"
+msgstr "اليوم"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__display_name
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__display_name
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__display_name
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_specilize__display_name
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward__display_name
+msgid "Display Name"
+msgstr "عرض الاسم"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_specilize__doctors_ids
+msgid "Doctors"
+msgstr "الاطباء"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_doctor__gender__female
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_nurse__gender__female
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_patient__gender__female
+msgid "Female"
+msgstr "انثى"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__gender
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__gender
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__gender
+msgid "Gender"
+msgstr "الجنس"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_patient__state__heal
+msgid "Heal"
+msgstr "يتماثل للشفاء"
+
+#. module: Hospital_Management_System
+#: model:ir.ui.menu,name:Hospital_Management_System.htm_hospital_root_menu
+msgid "Hospital"
+msgstr "المستشفى"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__id
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__id
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__id
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_specilize__id
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward__id
+msgid "ID"
+msgstr "رقم الهوية"
+
+#. module: Hospital_Management_System
+#: model:ir.module.category,name:Hospital_Management_System.iti_school_category
+msgid "ITI School Management"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor____last_update
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse____last_update
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient____last_update
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_specilize____last_update
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward____last_update
+msgid "Last Modified on"
+msgstr "اخر تعديل فى"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__write_uid
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__write_uid
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__write_uid
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_specilize__write_uid
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward__write_uid
+msgid "Last Updated by"
+msgstr "اخر تعديل بواسطة"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__write_date
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__write_date
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__write_date
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_specilize__write_date
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward__write_date
+msgid "Last Updated on"
+msgstr "اخر تعديل فى"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__locate
+msgid "Locate"
+msgstr "المكان"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_doctor__gender__male
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_nurse__gender__male
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_patient__gender__male
+msgid "Male"
+msgstr "ذكر"
+
+#. module: Hospital_Management_System
+#: model:ir.ui.menu,name:Hospital_Management_System.hms_sub_management_menu
+msgid "Management"
+msgstr "الادارة"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_nurse__shift__night
+msgid "Night"
+msgstr "الليلى"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward__nurses
+msgid "Nurses"
+msgstr "الممرضات"
+
+#. module: Hospital_Management_System
+#: model:ir.actions.report,name:Hospital_Management_System.action_report_hms_doctor
+msgid "PDF"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward__patients_ids
+msgid "Patients"
+msgstr "المرضى"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__res_patients
+msgid "Res Patients"
+msgstr "المسؤول عن المرضى"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward__resposible
+msgid "Resposible"
+msgstr "المسؤول"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_patient__state__serious
+msgid "Serious"
+msgstr "خطير"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__shift
+msgid "Shift"
+msgstr "الدوام"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__specilize
+msgid "Specilize"
+msgstr "التخصص"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: Hospital_Management_System
+#: code:addons/Hospital_Management_System/controllers/main.py:0
+#, python-format
+msgid "There is no pdf attached to generate a claim report."
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__wards
+msgid "Wards"
+msgstr "اجنحة"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields.selection,name:Hospital_Management_System.selection__hms_patient__state__well
+msgid "Well"
+msgstr "جيد"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__words_ids
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__words_ids
+msgid "Words"
+msgstr "اجنحة"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__description
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__description
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__description
+msgid "description"
+msgstr "الوصف"
+
+#. module: Hospital_Management_System
+#: model:res.groups,name:Hospital_Management_System.hms_hospital_doctor
+msgid "doctor"
+msgstr "طبيب"
+
+#. module: Hospital_Management_System
+#: model:ir.actions.act_window,name:Hospital_Management_System.hms_doctor_action
+#: model:ir.ui.menu,name:Hospital_Management_System.hms_doctors_sub_menu
+msgid "doctors"
+msgstr "الاطباء"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__email
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__email
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__email
+msgid "email"
+msgstr "البريد الالكترونى"
+
+#. module: Hospital_Management_System
+#: model:ir.model.constraint,message:Hospital_Management_System.constraint_hms_doctor_unique_email
+#: model:ir.model.constraint,message:Hospital_Management_System.constraint_hms_nurse_unique_email
+#: model:ir.model.constraint,message:Hospital_Management_System.constraint_hms_patient_unique_email
+msgid "email is already existed"
+msgstr "البريد الالكترونى مستخدم"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__first_name
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__first_name
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__first_name
+msgid "first name"
+msgstr "الاسم الاول"
+
+#. module: Hospital_Management_System
+#: model_terms:ir.ui.view,arch_db:Hospital_Management_System.hms_doctor_document
+msgid "header"
+msgstr "الرئيسية"
+
+#. module: Hospital_Management_System
+#: model:ir.model,name:Hospital_Management_System.model_hms_doctor
+msgid "hms.doctor"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.model,name:Hospital_Management_System.model_hms_nurse
+msgid "hms.nurse"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.model,name:Hospital_Management_System.model_hms_patient
+msgid "hms.patient"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.model,name:Hospital_Management_System.model_hms_specilize
+msgid "hms.specilize"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.model,name:Hospital_Management_System.model_hms_ward
+msgid "hms.ward"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__last_name
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__last_name
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__last_name
+msgid "last name"
+msgstr "الاسم الاخير"
+
+#. module: Hospital_Management_System
+#: model:ir.actions.act_window,name:Hospital_Management_System.hms_nurse_action
+#: model:ir.ui.menu,name:Hospital_Management_System.hms_nurses_sub_menu
+msgid "nurses"
+msgstr "ممرضات"
+
+#. module: Hospital_Management_System
+#: model:ir.actions.act_window,name:Hospital_Management_System.hms_patient_action
+#: model:ir.ui.menu,name:Hospital_Management_System.hms_patients_sub_menu
+msgid "patients"
+msgstr "مرضى"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_doctor__phone_number
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_nurse__phone_number
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_patient__phone_number
+msgid "phone number"
+msgstr "رقم التليقون"
+
+#. module: Hospital_Management_System
+#: model:ir.model.constraint,message:Hospital_Management_System.constraint_hms_doctor_unique_number
+#: model:ir.model.constraint,message:Hospital_Management_System.constraint_hms_nurse_unique_number
+#: model:ir.model.constraint,message:Hospital_Management_System.constraint_hms_patient_unique_number
+msgid "phone number is already existed"
+msgstr "التليقون مستخدم"
+
+#. module: Hospital_Management_System
+#: model:ir.actions.act_window,name:Hospital_Management_System.hms_specialize_action
+#: model:ir.ui.menu,name:Hospital_Management_System.hms_specialize_sub_menu
+msgid "specialize"
+msgstr "التخصص"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_specilize__name
+msgid "specilize name"
+msgstr "اسم التخصص"
+
+#. module: Hospital_Management_System
+#: model:ir.model.fields,field_description:Hospital_Management_System.field_hms_ward__name
+msgid "ward name"
+msgstr "اسم الجناح"
+
+#. module: Hospital_Management_System
+#: model:ir.actions.act_window,name:Hospital_Management_System.hms_ward_action
+#: model:ir.ui.menu,name:Hospital_Management_System.hms_ward_sub_menu
+msgid "wards"
+msgstr "اجنحة"
+
+#. module: Hospital_Management_System
+#: model_terms:ir.ui.view,arch_db:Hospital_Management_System.hms_doctor_document
+msgid "الاسم"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model_terms:ir.ui.view,arch_db:Hospital_Management_System.hms_doctor_document
+msgid "الطلبه"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model_terms:ir.ui.view,arch_db:Hospital_Management_System.hms_doctor_document
+msgid "المدرسون"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model_terms:ir.ui.view,arch_db:Hospital_Management_System.hms_doctor_document
+msgid "المراجعة"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model_terms:ir.ui.view,arch_db:Hospital_Management_System.hms_doctor_document
+msgid "توقيع المختص"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model_terms:ir.ui.view,arch_db:Hospital_Management_System.hms_doctor_document
+msgid "يعتمد"
+msgstr ""
+
+#. module: Hospital_Management_System
+#: model:ir.actions.report,print_report_name:Hospital_Management_System.action_report_hms_doctor
+msgid "’hms doctor - %s' % (object.first_name))"
+msgstr ""

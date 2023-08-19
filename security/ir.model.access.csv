@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+iti_access_Manager_doctor,iti_access_user_doctor,model_hms_doctor,hms_hospital_doctor,1,1,1,1
+iti_access_Manager_patient,iti_access_user_patient,model_hms_patient,hms_hospital_doctor,1,1,1,1
+iti_access_Manager_ward,iti_access_user_ward,model_hms_ward,hms_hospital_doctor,1,1,1,1
+iti_access_Manager_nurse,iti_access_user_nurse,model_hms_nurse,hms_hospital_doctor,1,1,1,1
+iti_access_Manager_specilize,iti_access_user_specilize,model_hms_specilize,hms_hospital_doctor,1,1,1,1
